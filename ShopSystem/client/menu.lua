@@ -101,6 +101,7 @@ function openMenuShop(currentConfigShop)
                 RageUI.Checkbox("Payer en Liquide", nil, checkMoney, {}, {
                     onChecked = function()
                         checkMoney = true
+                        checkBank = false
                     end,
                     onUnChecked = function()
                         checkMoney = false
@@ -109,6 +110,7 @@ function openMenuShop(currentConfigShop)
                 RageUI.Checkbox("Payer en Banque", nil, checkBank, {}, {
                     onChecked = function()
                         checkBank = true
+                        checkMoney = false
                     end,
                     onUnChecked = function()
                         checkBank = false
